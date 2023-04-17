@@ -2,6 +2,7 @@ package Donnerstag4;
 
 import Donnerstag3.Friend;
 
+import java.util.ArrayList;
 
 
 public class EventCalendar {
