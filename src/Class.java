@@ -5,13 +5,19 @@ public class Class {
     private int hours;
     private int maxCapacity;
     private int enrolledStudents;
+    private Wochentag day;
 
 
-    public Class(String name, int hours, int maxCapacity, int enrolledStudents) {
+    public Class(String name, int hours, int maxCapacity, Wochentag day) {
         this.name = name;
         this.hours = hours;
-        this.maxCapacity=maxCapacity;
-        enrolledStudents=0;
+        this.maxCapacity = maxCapacity;
+        enrolledStudents = 0;
+        this.day=day;
+    }
+
+    public Wochentag getDay() {
+        return day;
     }
 
     @Override
@@ -52,7 +58,10 @@ public class Class {
     public void setEnrolledStudents(int enrolledStudents) {
         this.enrolledStudents = enrolledStudents;
     }
+
     public void enroll() {
+
+
         if (maxCapacityReached()) {
             System.out.println("Kurs ist voll");
         } else {
@@ -62,10 +71,10 @@ public class Class {
     }
 
 
-    public boolean maxCapacityReached(){
-       return enrolledStudents>=maxCapacity;
-        }
+    public boolean maxCapacityReached() {
+        return enrolledStudents >= maxCapacity;
     }
+}
 
 
 
