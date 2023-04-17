@@ -3,6 +3,7 @@ package Donnerstag4;
 import Donnerstag3.Friend;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class EventCalendar {
@@ -80,7 +81,16 @@ public class EventCalendar {
         return result;
     }
 
+    public void removeExpensive(double limit) {
+        Iterator<Event> it = events.iterator();
 
+        while (it.hasNext()) {
+            Event event = it.next();
+            if (event.getPreis() > limit) {
+                it.remove();
+            }
+        }
+    }
 
 
 }

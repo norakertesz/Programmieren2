@@ -3,10 +3,10 @@ package Donnerstag4;
 public class MainEvent {
     public static void main(String[] args) {
 
-        Event e1 = new Event(Eventtype.KONZERT, "Maroon5", "Prague", 200.15);
-        Event e2 = new Event(Eventtype.REISE, "GoHome", "Hungary", 1200.15);
+        Event e1 = new Event(Eventtype.KONZERT, "Maroon5", "Prague", 203.15);
+        Event e2 = new Event(Eventtype.REISE, "GoHome", "Hungary", 201.15);
         Event e3 = new Event(Eventtype.VORTRAG, "Csernus", "Wien", 50.15);
-        Event e4 = new Event(Eventtype.KONZERT, "Maroon5", "Prague", 200.15);
+        Event e4 = new Event(Eventtype.KONZERT, "Maroon5", "Prague", 100.15);
         EventCalendar myCalendar = new EventCalendar();
         myCalendar.add(e1);
         myCalendar.add(e2);
@@ -31,6 +31,13 @@ public class MainEvent {
         System.out.println("");
         System.out.println("-----getMostExpensive-----");
         System.out.println(myCalendar.getMostExpensive());
+
+        System.out.println("");
+        System.out.println("-----removeExpensive-----");
+        myCalendar.removeExpensive(200);
+        myCalendar.print();
+
+
 
 
 

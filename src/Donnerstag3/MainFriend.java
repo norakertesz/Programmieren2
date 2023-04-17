@@ -1,6 +1,8 @@
 package Donnerstag3;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainFriend {
     public static void main(String[] args) {
@@ -28,8 +30,17 @@ public class MainFriend {
         friendList.print();
         System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
 
-        ArrayList<Friend> friendsfromsamecountry =friendList.friendsAbroad("Austria" );
-            friendList.print(friendsfromsamecountry);
+        ArrayList<Friend> friendsfromsamecountry = friendList.friendsAbroad("Austria");
+        friendList.print(friendsfromsamecountry);
+
+
+        Map<String, Integer> phonenr = new HashMap<>();
+        phonenr.put("Kata", 06503262541);
+        phonenr.put("Veronika", 06775262441);
+        System.out.println(phonenr.entrySet());
+        System.out.println(phonenr.keySet());
+        System.out.println(phonenr.values());
+        System.out.println();
 
     }
 

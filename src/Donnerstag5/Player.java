@@ -3,18 +3,18 @@ package Donnerstag5;
 import Donnerstag4.Eventtype;
 
 public class Player {
+
     private int id;
-    private static int counter=0;
+    private static int counter = 0;
     private String name;
     private Team team;
-    private int point;
+    private int points;
 
 
-    public Player(String name, Team team, int point) {
+    public Player(String name, int points) {
         this.name = name;
-        this.team = team;
-        this.point=point;
-        this.id=counter++;
+        this.id = counter++;
+        this.points = points;
     }
 
     public int getId() {
@@ -49,24 +49,22 @@ public class Player {
         this.team = team;
     }
 
-    public int getPoint() {
-        return point;
+    public int getPoints() {
+        return points;
     }
 
-    public void setPoint(int point) {
-        this.point = point;
+    public void setPoints(int points) {
+        this.points = points;
     }
 
     @Override
     public String toString() {
         return "Player{" +
+                "id='" + id + '\'' +
                 "name='" + name + '\'' +
-                ", team=" + team +
-                ", point=" + point +
+                ", point=" + points +
                 '}';
     }
-
-
 
 
 }
