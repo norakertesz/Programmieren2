@@ -2,8 +2,8 @@ package Hase;
 
 public class Osterhase extends Hase{
 
-    public Osterhase(String name) {
-        super(name);
+    public Osterhase(String name, int alter, int c) {
+        super(name,alter,c);
     }
 
     public void versteckeOstereier(){

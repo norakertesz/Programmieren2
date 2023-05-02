@@ -1,8 +1,8 @@
 package Hase;
 
 public class Weihnachtshase extends Hase {
-    public Weihnachtshase(String name) {
-        super(name);
+    public Weihnachtshase(String name, int alter, int c) {
+        super(name, alter,c);
     }
 
     public void verteileGeschenke() {
