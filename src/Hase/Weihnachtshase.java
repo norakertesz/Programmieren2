@@ -1,0 +1,17 @@
+package Hase;
+
+public class Weihnachtshase extends Hase {
+    public Weihnachtshase(String name) {
+        super(name);
+    }
+
+    public void verteileGeschenke() {
+        System.out.println(getName() + " sagt: " + "Du bekommst nichts!");
+    }
+
+    @Override
+    public void party(String drink, String cake){
+        System.out.println("Weihnachtshase "+ getName() +" bringt ganz viele Geschenke zur Party.");
+    }
+
+}
