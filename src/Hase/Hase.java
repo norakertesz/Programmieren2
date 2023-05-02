@@ -11,6 +11,8 @@ public class Hase implements GoesToParty, Comparable<Hase>{
 
     public Hase(String name, int alter, int c) {
         this.name = name; this.alter=alter;this.carrotNr=c;}
+    public Hase(String name) {
+        this.name = name;}
 
     public String getName() {
         return name;
